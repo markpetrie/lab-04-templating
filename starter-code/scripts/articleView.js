@@ -9,8 +9,6 @@ articleView.populateFilters = function() {
       // REVIEW Using ES2015 template literals we can interpolate variables into strings in a much cleaner way.
       var optionTag = `<option value="${val}">${val}</option>`;
 
-      console.log('var optionTag: ' + optionTag);
-
       if ($(`#author-filter option[value="${val}"]`).length === 0) {
         $('#author-filter').append(optionTag);
       }

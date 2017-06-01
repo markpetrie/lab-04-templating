@@ -12,14 +12,14 @@
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
   <script id="articleTemplate" type="text/x-handlebars-template">
-    <article data-category='{{ category }}'>
+    <article data-category="{{ category }}" data-author="{{ author }}">
       <header>
         <h1>{{ title }}</h1>
         <div class="byline">
           By
-          <address><a href='{{ authorUrl }}'>{{ author }}</a></address>
+          <address><a href="{{ authorUrl }}">{{ author }}</a></address>
           published on
-          <time pubdate datetime='{{ publishedOn }}'>{{ publishedOn }}, {{publishStatus}}</time>
+          <time pubdate datetime="{{ publishedOn }}">{{ publishedOn }}, {{publishStatus}}</time>
         </div>
       </header>
       <section class="article-body">
